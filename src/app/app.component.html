@@ -1,0 +1,37 @@
+<mat-toolbar class="menu">
+  <div class="logo">
+    <img src="./assets/pokem.gif" alt="" width="60px">
+  </div>
+  <div class="accueil">
+    <button mat-icon-button routerLink="/" color="white">
+          <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+      </button>
+      
+      <button mat-button routerLink="/characters" color="white">
+        List of pokemons
+      </button>
+  </div>
+</mat-toolbar>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<mat-toolbar class="footer">
+  <span>Pokemon</span>
+  <span class="example-spacer"></span>
+  <div class="accueil">
+    <button mat-icon-button onclick="window.location.href = 'https://www.facebook.com/PokemonOfficielFR';" >
+      <img src="./assets/facebook.png" alt="">
+    </button>
+    <button mat-icon-button onclick="window.location.href = 'https://www.instagram.com/pokemon/?hl=fr';" >
+      <img src="./assets/instagram.png" alt="">
+    </button>
+    <button mat-icon-button onclick="window.location.href = 'https://twitter.com/Pokemon';">
+      <img src="./assets/twitter.png" alt="">
+    </button>
+    <button mat-icon-button onclick="window.location.href = 'https://www.youtube.com/user/pokemon';">
+      <img src="./assets/youtube.png" alt="">
+    </button>
+  </div>
+</mat-toolbar>

@@ -1,0 +1,100 @@
+
+<div>
+    <img src="./assets/pokemon.png" alt="" width=500px;>
+</div>
+<br/>
+<mat-tab-group mat-align-tabs = "center" animationDuration = "1000ms"> 
+    <mat-tab  label = " Fire" > 
+        <img src="https://images.pokemontcg.io/xyp/XY54.png" alt="">
+        <img src="https://images.pokemontcg.io/hgss1/1.png" alt="">
+        <img src="https://images.pokemontcg.io/g1/13.png" alt=""> 
+    </mat-tab> 
+    <mat-tab  label = " Water" >
+        <img src="https://images.pokemontcg.io/g1/25.png" alt=""> 
+        <img src="https://images.pokemontcg.io/hgss1/4.png" alt="">
+        <img src="https://images.pokemontcg.io/swsh1/50.png" alt="">
+    </mat-tab> 
+    <mat-tab  label = " Grass " > 
+        <img src="https://images.pokemontcg.io/bw7/9.png" alt="">
+        <img src="https://images.pokemontcg.io/det1/1.png" alt="">
+        <img src="https://images.pokemontcg.io/bw10/9.png" alt=""> 
+    </mat-tab> 
+    <mat-tab  label = " Darkness " > 
+        <img src="https://images.pokemontcg.io/xyp/XY62.png" alt="">
+        <img src="https://images.pokemontcg.io/dp4/3.png" alt="">
+        <img src="https://images.pokemontcg.io/swsh5/179.png" alt=""> 
+    </mat-tab> 
+    <mat-tab  label = " Lightning " > 
+        <img src="https://images.pokemontcg.io/smp/SM173.png" alt="">
+        <img src="https://images.pokemontcg.io/dpp/DP04.png" alt="">
+        <img src="https://images.pokemontcg.io/swsh4/44.png" alt=""> 
+    </mat-tab> 
+    <mat-tab  label = " Dragon " > 
+        <img src="https://images.pokemontcg.io/xyp/XY73.png" alt="">
+        <img src="https://images.pokemontcg.io/xy6/57.png" alt="">
+        <img src="https://images.pokemontcg.io/xy7/57.png" alt=""> 
+    </mat-tab> 
+    <mat-tab  label = " Colorless " > 
+        <img src="https://images.pokemontcg.io/xy10/83.png" alt="">
+        <img src="https://images.pokemontcg.io/pl1/4.png" alt="">
+        <img src="https://images.pokemontcg.io/bw4/82.png" alt=""> 
+    </mat-tab> 
+    <mat-tab  label = " Fairy " > 
+        <img src="https://images.pokemontcg.io/xyp/XY07.png" alt="">
+        <img src="https://images.pokemontcg.io/sm115/41.png" alt="">
+        <img src="https://images.pokemontcg.io/g1/RC21.png" alt=""> 
+    </mat-tab> 
+    <mat-tab  label = " Fighting " > 
+        <img src="https://images.pokemontcg.io/swsh35/27.png" alt="">
+        <img src="https://images.pokemontcg.io/col1/6.png" alt="">
+        <img src="https://images.pokemontcg.io/smp/SM14.png" alt=""> 
+    </mat-tab> 
+    <mat-tab  label = " Metal " > 
+        <img src="https://images.pokemontcg.io/xy4/62.png" alt="">
+        <img src="https://images.pokemontcg.io/hgss4/1.png" alt="">
+        <img src="https://images.pokemontcg.io/xyp/XY34.png" alt=""> 
+    </mat-tab> 
+    <mat-tab  label = " Psychic " > 
+        <img src="https://images.pokemontcg.io/sm7/66.png" alt="">
+        <img src="https://images.pokemontcg.io/hgss2/1.png" alt="">
+        <img src="https://images.pokemontcg.io/bw7/67.png" alt=""> 
+    </mat-tab> 
+</mat-tab-group>
+
+<mat-accordion>
+    <mat-expansion-panel class="haut" (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+            Our Application
+        </mat-panel-title>
+        <mat-panel-description>
+            What is the objective of our application?
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+        <p>The focus of our application is on the theme of pokemons. This application works via an 
+          API that collects 250 Pokémon cards and displays them. The site will allow maps to be 
+          displayed according to pokemon type, as well as search for the desired pokemon. The 
+          pokemon cards being in English we decided to make the whole site in English. 
+        </p>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel class="espace" (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+            Site features
+        </mat-panel-title>
+        <mat-panel-description>
+            Some features we used
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+        <p>We use the Pokemon TCG API, this API aims to provide us with a database of all 
+          pokemon cards. It provides within these cards all the necessary characteristics 
+          such as the name of the pokemon, its type or even its attacks. This API offers 
+          different functionalities. It allows us to get all cards, get a specific card, 
+          get types and subtypes, and other useful features.
+        </p>
+    </mat-expansion-panel>
+  </mat-accordion>
+

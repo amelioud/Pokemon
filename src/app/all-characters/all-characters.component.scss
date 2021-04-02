@@ -1,0 +1,45 @@
+@import "~@angular/material/theming";
+
+.card-container {
+  margin-top: 16px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+
+  .card {
+    cursor: pointer;
+
+    &:hover {
+      @include mat-elevation(8);
+    }
+  }
+}
+
+.search-bar {
+  margin-top: 16px;
+
+  .search-bar-field {
+    padding: 0 4px;
+  }
+}
+
+.search-bar-header {
+  display: flex;
+  justify-content: space-between;
+}
+mat-card-title {
+    font-family: 'Merienda One', cursive;
+    text-align: center;
+}
+mat-card-subtitle {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+mat-card {
+  margin: 5px;
+}
+mat-card-content {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}

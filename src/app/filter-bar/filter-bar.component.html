@@ -1,0 +1,35 @@
+<mat-card class="search-bar">
+    <form [formGroup]="searchForm">
+      <mat-card-header class="search-bar-header">
+        <mat-card-title>Filtering pokemons</mat-card-title>
+      </mat-card-header>
+    <div class="bar">
+      <mat-form-field class="search-bar-field" appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput type="text" formControlName="name"/>
+      </mat-form-field>
+    
+      <mat-form-field class="search-bar-field" appearance="fill">
+        <mat-select formControlName="types">
+          <mat-option>-- None --</mat-option>
+          <mat-option value="colorless">Colorless</mat-option>
+          <mat-option value="darkness">Darkness</mat-option>
+          <mat-option value="dragon">Dragon</mat-option>
+          <mat-option value="fairy">Fairy</mat-option>
+          <mat-option value="fighting">Fighting</mat-option>
+          <mat-option value="fire">Fire</mat-option>
+          <mat-option value="grass">Grass</mat-option>
+          <mat-option value="lightning">Lightning</mat-option>
+          <mat-option value="metal">Metal</mat-option>
+          <mat-option value="psychic">Psychic</mat-option>
+          <mat-option value="water">Water</mat-option>
+        </mat-select>
+        <mat-label>Types</mat-label>
+      </mat-form-field>
+</div>
+    </form>
+    <mat-card-subtitle> 
+      <img src="./assets/fleche.png" alt="" width="25px">
+      Enter the full name of the desired pokemon
+    </mat-card-subtitle>
+</mat-card>

@@ -1,0 +1,20 @@
+<a mat-flat-button routerLink="/characters" class="back-btn">
+    <mat-icon>undo</mat-icon>Back to the list of pokemons
+  </a>
+  
+  <mat-card class="card" *ngIf="character$ | async as character">
+   
+      <mat-card-title>
+        {{ character.name }}
+      </mat-card-title>
+      <div class="img">
+        <img mat-card-image [alt]="character.name" [src]="character.images.large" />
+      </div>
+      <mat-card-content>
+        <p><strong>Supertype :</strong> {{ character.supertype }}</p>
+        <p><strong>Subtype :</strong> {{ character.subtypes }}</p>
+        <p><strong>Hp :</strong> {{ character.hp }}</p>
+        <p><strong>Type :</strong> {{ character.types }}</p>
+        <p><strong>Evolution :</strong> {{ character.evolvesTo }}</p>
+    </mat-card-content>
+  </mat-card>

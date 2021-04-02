@@ -1,0 +1,30 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+  }
+.accueil {
+  position: absolute;
+  right: 1%;
+}  
+.logo {
+  margin: 5px;
+  position: absolute;
+  left: 1%;
+  top: 15px;
+}
+.menu {
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 2;
+  
+}
+.footer {
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+button {
+  font-family: 'Montserrat', sans-serif;
+
+}

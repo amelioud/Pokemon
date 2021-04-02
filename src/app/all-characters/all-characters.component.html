@@ -1,0 +1,24 @@
+<app-filter-bar (search)="newSearch($event)"></app-filter-bar>
+ 
+  <div class="card-container">
+    <mat-card
+      class="card"
+      *ngFor="let character of allCharacters$ | async"
+      [routerLink]="'/character/' + character.id"
+    >
+      <mat-card-title>{{ character.name | uppercase }}</mat-card-title>
+      <mat-card-subtitle>{{ character.types || "n/a" }}</mat-card-subtitle>
+  
+      <img
+        mat-card-image
+        [src]="character.images.small"
+        alt="Photo of {{ character.name }}"
+      />
+      <mat-card-content>
+        <p><strong>Supertype : </strong>&nbsp;{{ character.supertype }}</p>
+        <p><strong>Subtype : </strong>&nbsp;{{ character.subtypes }}</p>
+        <p><strong>HP : </strong> {{ character.hp }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  
